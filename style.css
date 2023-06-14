@@ -15,6 +15,7 @@
     cinco: #00332c;
 }
 html {
+    scroll-behavior: smooth;
     scroll-padding-top: 80px; }
 
 /*HEADER*/
@@ -54,24 +55,36 @@ main {
 }
 #hero {
     display: flex;
-    padding: 70px 0px;
+    padding: 50px 0px;
     width: 98%;
-    justify-content: space-around;
+    justify-content: center;
 }
-.hero-presentation {
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 850px;
+    padding: 30px 0px;
+    font-weight: 300;
+    text-align: center;
+    color: #490b06;
+}
+.about-presentation {
     display:inline-flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
 }
-.hero-presentation h1 {
+.about-presentation h1 {
     font-weight: 700;
     font-size: 40px;
     display: flex;
     flex-direction: column;
     color: black;
 }
-.hero-presentation p {
+.about-presentation p {
     font-weight: 300;
     font-size: 16px;
     max-width: 350px;
@@ -87,3 +100,7 @@ main {
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 } 
+
+ .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
