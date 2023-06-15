@@ -156,6 +156,14 @@ main {
 
 }
 
+.button {
+    border: none;
+    padding: 10px 20px;
+    color: burlywood;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 18px;
+}
 /*Formulario para enviar la consulta*/
 
 .consult-form {
