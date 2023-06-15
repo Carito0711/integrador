@@ -58,6 +58,8 @@ main {
     padding: 50px 0px;
     width: 98%;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .card-text {
@@ -68,8 +70,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
- } 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+} 
 
 
 #about {
@@ -84,6 +86,7 @@ main {
     font-weight: 300px;
     text-align: center;
     color: #490b06;
+    flex-wrap: wrap;
 }
 .about-presentation {
     display:inline-flex;
@@ -114,4 +117,161 @@ main {
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 } 
+
+#cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 70px 0px;
+    width: 80%;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    max-width: 450px;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+
+.cards img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+/*Formulario para enviar la consulta*/
+
+.consult-form {
+    height: 35%;
+    width: 75%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.form {
+    display: block;
+    margin-top: 0em;
+}
+.form h3 {
+    font-size:1.5em;
+    width: 80%;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #00332c;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.form .name, .form .surname, .form .email, .form .number {
+    width: 150%;
+    text-align:left;
+    position: relative;
+}
+
+    /*Boton del formulario*/
+
+.form button {
+   
+      --c: #fff;
+      background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+      #FC8278;
+      color: #0000;
+      border: none;
+      transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+      text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c), calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+      outline-offset: .1em;
+      transition: 0.3s;
+      border-radius: 7%;
+      display: inline-block;
+      padding: 3px;
+      position: relative;
+      width: 35%;
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 0;
+      cursor: pointer;
+      padding: .1em .3em;
+  }
+    .button-92:hover,
+    .button-92:focus-visible {
+      --_p: 0%;
+      --_i: 1;
+    }
+    .button-92:active {
+      text-shadow: none;
+      box-shadow: inset 0 0 9e9q #0005;
+      transition: 0s;
+    }   
+    .button-62:not([disabled]):focus {
+      box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    }   
+    .button-62:not([disabled]):hover {
+      box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    }
+
+    /*Section de contacto*/
+
+#contact-section {
+    background-color: #FCF478 ;
+    color: #00332c;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 50px 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*Mapita google*/
+
+iframe {
+    width: 40%;
+    height: 40%;
+    border-radius: 5px; 
+}
+
+/*Copyright*/
+
+.footer {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
 
