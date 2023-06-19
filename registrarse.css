@@ -30,21 +30,6 @@ body {
     --colorextra: #faae2b;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Asap', sans-serif;
-    font-size: 40px;
-    position: relative;
-    left: 46rem;
-    top: 6rem;
-    background: transparent;
-    backdrop-filter: blur(25px);
-    width: 500px;
-    border: 5px solid salmon;
-    border-radius: 25px;
-}
 .contenedor {
 
     width: 600px;
@@ -59,7 +44,10 @@ body {
     border-radius: 30px;
     gap: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 15px;
     }
+
+    
 
 .formulario {
     background-color: #fff;
@@ -71,15 +59,21 @@ h1 {
     color: black;
     font-size: 40 px;
 }
-.input_cont{
-height: 50px;
-display: block;
-justify-content: center;
-align-items: center;
-text-align: center;
-position: relative;
-top: 2rem;
-margin-bottom: 15px;
+input [type="text"]
+input [type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border-radius: 7px;
+}
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon {
+    min-width: 50PX;
+    text-align: center;
+    color: #999;
 }
 .button {
     align-self: center;
@@ -120,141 +114,5 @@ margin-bottom: 15px;
   .button:focus {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   }
-}
-.button:hover{
-    background: coral;
-}
-.fin_page{
-    font-size: 22px;
-    font-weight: 600;
-    position: relative;
-    bottom: -3rem;
-}
-input[type="text"],
-input[type="password"],
-input[type="email"]{
-    font-size: 20px;
-    width: 550px;
-    padding: 10px;
-    border: 2px solid tomato;
-    border-radius: 25px;
-}
-i{
-    width: 30px;
-    height: 30px;
-    color: tomato;
-}
-.link{
-    text-decoration: none;
-    font-weight: 800;
-    color: coral;
-}
-.link:hover{
-    color: crimson;
-}
-.login{
 
-    flex-wrap: wrap;
-
-    
-}
-/*           seccion login       */
-.input_icon{
-    display: flex;
-}
-.input_icon i{
-    position: relative;
-    top: 29px;
-    left: 18px;
-}
-.login{
-    gap: 40px;
-}
-.title_login{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Asap', sans-serif;
-    font-size: 40px;
-    position: relative;
-    left: 45rem;
-    top: 6rem;
-    background: transparent;
-    backdrop-filter: blur(25px);
-    width: 500px;
-    border: 5px solid salmon;
-    border-radius: 25px;
-    gap: 30px;
-    color: black;
-}
-.box_log{
-    display: block;
-    width: 600px;
-    height: 300px;
-    background: transparent;
-    backdrop-filter: blur(25px);
-    border: 5px solid salmon;
-    border-radius: 25px;
-    position: relative;
-    left: 42rem;
-    top: 6rem;
-    gap: 30px;
-}
-.box_log input{
-    margin-top: 1rem;
-    margin: 1rem;
-}
-.box_log button{
-        width: 200px;
-        height: 30px;
-        background-color: tomato;
-        border-radius: 5px;
-        font-size: 20px;
-        cursor: pointer;
-        font-family: 'Asap', sans-serif;
-        font-weight: 800;
-        position: relative;
-        top: 3rem;
-        left: 12rem;
-    }
-.box_log button:hover{
-        background: coral;
-    }
-.box_log p{
-    position: relative;
-    top: 3rem;
-    left: 6rem;
-    font-size: 20px;
-    font-weight: 600;
-}
-.link2{
-    text-decoration: none;
-    font-weight: 800;
-    color: coral;
-}
-.link2:hover{
-    color: crimson;
-}
-
- /* footer */
- .footer{
-    display: flex;
-    background-color: coral;
-    width: 100%;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-   }
-   .footer img{
-    opacity: 0.8;
-    position: relative;
-    left: 24rem;
-   }
-   .footer h2{
-    font-size: 15px;
-    font-family: 'Asap', sans-serif;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    position: relative;
-    left: 24rem;
-    opacity: 0.8;
-   }
+  
